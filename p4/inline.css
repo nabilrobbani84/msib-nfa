@@ -1,0 +1,26 @@
+.block-element{
+    background-color: blueviolet;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid rgb(212, 21, 21);
+    width: 100%;
+}
+
+.inline-element{
+    background-color: blueviolet;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid rgb(212, 21, 21);
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+nav a{
+    color:blueviolet;
+    padding: 2px 5px;
+    border: 1px solid aliceblue;
+    background-color: azure;
+}
+nav a:hover{
+    text-decoration: dashed;
+}

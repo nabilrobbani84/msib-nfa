@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-contoh{
+    padding: 20px;
+    border: 2px solid rgb(168, 237, 5);
+    margin-top: 30px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(168, 237, 5);
+    border-radius: 10px;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(168, 237, 5);
+    border-radius: 10px;
+}
+button{
+    background-color: rgb(237, 5, 78);
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aquamarine;
+}

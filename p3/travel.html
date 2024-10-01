@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket</title>
+    <style>
+        /* Selector Tag */
+h1 {
+    color: #9d1ebd; /* Mengubah warna teks judul */
+    text-align: center; /* Mengatur teks menjadi terpusat */
+}
+
+/* Selector ID */
+#jumlah-tiket {
+    border: 2px solid #3515c3; /* Mengatur border input jumlah tiket */
+    padding: 5px; /* Menambahkan padding pada input */
+}
+
+/* Selector Class */
+.table-header {
+    background-color: #f2f2f2; /* Mengatur warna latar belakang header tabel */
+    font-weight: bold; /* Mengatur teks menjadi tebal */
+}
+    </style>
+</head>
+<body>
+    <h1>Pemesanan Tiket</h1>
+    <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="jumlah-tiket">Jumlah Tiket:</label>
+        <input type="number" id="jumlah-tiket" name="jumlah-tiket" min="1" required><br><br>
+
+        <input type="submit" value="Pesan Tiket">
+    </form>
+
+    <h2>Tiket Tersedia</h2>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Jenis Tiket</th>
+            <th>Harga</th>
+            <th>Ketersediaan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tiket Reguler</td>
+            <td>Rp 100.000</td>
+            <td>Tersedia</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tiket VIP</td>
+            <td>Rp 200.000</td>
+            <td>Tersedia</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tiket Group</td>
+            <td>Rp 800.000</td>
+            <td>Tersedia</td>
+        </tr>
+    </table>
+</body>
+</html>

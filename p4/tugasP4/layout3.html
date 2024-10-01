@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Layout</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    header {
+      grid-column: 1 / 4;
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      grid-column: 1 / 4;
+      background-color: #e0e0e0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      grid-column: 2 / 3;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    aside {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    footer {
+      grid-column: 1 / 4;
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <nav>
+    <p>Navigation Menu</p>
+  </nav>
+
+  <aside>
+    <p>Content</p>
+  </aside>
+
+  <main>
+    <p>Main Content</p>
+  </main>
+
+  <aside>
+    <p>Content</p>
+  </aside>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+</div>
+
+</body>
+</html>

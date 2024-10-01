@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+            color: blue;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            background-color: rgb(174, 14, 128);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Pendaftaran</h1>
+    <form>
+        <!-- 1. Nama lengkap -->
+        <label for="nama-lengkap" style="font-weight: bold; color: blue;">Nama Lengkap:</label>
+        <input type="text" id="nama-lengkap" name="nama-lengkap" required minlength="3" style="border: 1px solid green;">
+      
+        <!-- 2. Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <!-- 3. Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8"><br><br>
+      
+        <!-- 4. Tanggal lahir -->
+        <label for="tanggal-lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal-lahir" name="tanggal-lahir" required><br><br>
+      
+        <!-- 5. Jenis kelamin -->
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki" required> Laki-laki
+        <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan" required> Perempuan<br><br>
+      
+        <!-- 6. Nomor Telpon -->
+        <label for="nomor-telpon">Nomor Telpon:</label>
+        <input type="tel" id="nomor-telpon" name="nomor-telpon" required pattern="[0-9]{10,13}"><br><br>
+      
+        <!-- 7. Unggah foto profil (opsional) -->
+        <label for="foto-profil">Unggah Foto Profil:</label>
+        <input type="file" id="foto-profil" name="foto-profil"><br><br>
+      
+        <!-- 8. Persetujuan syarat dan ketentuan -->
+        <label for="syarat-dan-ketentuan">Saya setuju dengan syarat dan ketentuan:</label>
+        <input type="checkbox" id="syarat-dan-ketentuan" name="syarat-dan-ketentuan" required><br><br>
+      
+        <input type="submit" value="Daftar">
+      </form>
+</body>
+</html>
