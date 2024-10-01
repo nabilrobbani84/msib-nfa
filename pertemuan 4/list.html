@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Curriculum Vitae</title>
+    <link rel="stylesheet" href="./css/list.css"> <!-- External CSS -->
+
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f0f2f5;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        /* ID Selector */
+        #social-links {
+            background-color: #3498db;
+            padding: 15px;
+            text-align: center;
+            list-style-type: none;
+            margin: 30px 0;
+        }
+
+        #social-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        #social-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #social-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Class Selector */
+        .table-heading {
+            background-color: #2980b9;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .data {
+            text-align: center;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        /* Tag Selector */
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d6eaf8;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-family: 'Courier New', Courier, monospace; color: #34495e;">My Curriculum Vitae</h1> <!-- Inline CSS -->
+    <hr>
+    
+    <ol type="I">
+        <li>
+            <h3>Biodata Pribadi</h3>
+            <ul>
+                <li>Nama lengkap: Nabil Robbani</li>
+                <li>Nama Panggilan: Nabil</li>
+                <li>Tempat Lahir: Bekasi, 08 April 2002</li>
+                <li>Jenis kelamin: Laki-Laki</li>
+                <li>Alamat: Jatiasih, Kota Bekasi</li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Biodata Pendidikan</h3>
+            <ul>
+                Pendidikan Formal
+                <ul>
+                    <li>SDIT IQRO'</li>
+                    <li>SMPIT IQRO'</li>
+                    <li>SMKIT Fitrah Hanniah</li>
+                    <li>Teknik Informatika STT-NF</li>
+                </ul>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Social Media</h3>
+            <ul id="social-links">
+                <li><a href="https://www.linkedin.com/in/nabil-robbani-366a30251/">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/bilrbn?igsh=ajNteG5nZ210Njg2">Instagram</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Table</h3>
+            <table>
+                <caption style="font-weight: bold; margin-bottom: 10px;">Daftar Belanja Maret</caption> <!-- Inline CSS -->
+                <tr class="table-heading">
+                    <th>No</th>
+                    <th>Nama Barang</th>
+                    <th>Unit</th>
+                    <th>Harga</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sabun</td>
+                    <td>2</td>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pasta Gigi</td>
+                    <td>3</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sampo</td>
+                    <td>1</td>
+                    <td>1000</td>
+                </tr>
+                <tr class="table-heading">
+                    <td colspan="3">Total Harga</td>
+                    <td>9000</td>
+                </tr>
+            </table>
+        </li>
+
+        <li>
+            <h3>Tabel Data Diri</h3>
+            <table>
+                <caption class="data">Biodata Pribadi</caption>
+                <tr class="table-heading">
+                    <th>No</th>
+                    <th>Tahun</th>
+                    <th>Institusi</th>
+                    <th>Jurusan</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2010 - 2016</td>
+                    <td>SDIT IQRO'</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2016 - 2019</td>
+                    <td>SMPIT IQRO'</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2019 - 2022</td>
+                    <td>SMKIT Fitrah Hanniah</td>
+                    <td>Teknik Mekanik Industri</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2022 - Sekarang</td>
+                    <td>STT-NF</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+</body>
+
+</html>
