@@ -1,0 +1,26 @@
+/* stlye unAtuk block element */
+
+.block-element{
+    background-color: bisque;
+    margin: 5px b0px;
+    padding: 20px;
+    width: 100%; /*syarat lanjutan dari block element => tampilan penuh satu baris layar*/
+    border: 1px solid rgb(30, 116, 192);
+}
+
+.inline-element{
+    background-color: blanchedalmond;
+    padding: 2px 5px;
+    border: 1px solid rgb(82, 82, 87);
+}
+
+nav  a{
+    color: antiquewhite;
+    padding: 2px 5px;
+    border: 1px solid rgb(108, 108, 151);
+    background-color: aqua;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
