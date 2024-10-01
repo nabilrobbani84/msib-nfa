@@ -1,0 +1,33 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    color: red;
+} 
+#unique-heading{
+    font-size: 24px
+}
+.alert{
+    background-color: lightblue;
+    padding: 10px;
+}
+/*external css*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}    

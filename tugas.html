@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Sederhana</title>
+    <link rel="stylesheet" href="css/tugas.css">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            color: red;
+        }
+        #unique-heading{
+            font-size: 24px;
+        }
+        .alert{
+            background-color: lightcyan;
+            padding: 10px;
+            border: 1px solid lightcoral;
+        }
+    </style>
+</head>
+<body> 
+    <h1 id="unique-heading">Form Sederhana</h1>
+    <!--message-->
+    <div class="alert">Please fill out the form below</div>
+    <form action="" method="post">
+
+        <!--Nama-->
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required minlength="3" required placeholder="masukan nama lengkap">
+        <br><br>
+
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!--Password-->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" >
+        <br><br>
+
+        <!--Tanggal Lahir-->
+        <label for="tanggal lahir">Tanggal Lahir:</label>
+        <input type="date" name="tanggal lahir" required>
+        <br><br>
+
+        <!--Umur-->
+        <label for="umur">Umur:</label>
+        <input type="umur" id="umur" name="umur" required min="18">
+        <br><br>
+
+        <!--Jenis Kelamin--> 
+        <label for="laki laki">Laki-Laki</label>
+        <input type="radio" id="jenis kelamin" value="male" required>
+        <label for="Perempuan">Perempuan</label>
+        <input type="radio" id="jenis kelamin" value="female" required>
+        <br><br>
+
+        <!--No Telp-->
+        <label for="nomor telp">Nomor Telepon:</label>
+        <input type="tel" name="nomor telp" id="nomor telp" pattern="{10-13}">
+        <br><br>
+
+        <!--Gambar-->
+        <input type="image" src="pp.jpeg" width="100" height="100">
+        <br><br>
+
+        <!--Persetujuan dan Ketentuan-->
+        <input type="checkbox" id="Syarat" name="Syarat" required>
+        <label for="Syarat">Saya Setuju Dengan Syarat Dan Ketentuan</label> 
+        <br><br>
+
+        <!--Tombol Submit-->
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
